@@ -2,4 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+<<<<<<< HEAD
 packrat/lib*/
+=======
+packrat/lib*/
+>>>>>>> refs/remotes/origin/master
+*.gz
