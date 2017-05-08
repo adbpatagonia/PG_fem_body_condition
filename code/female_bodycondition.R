@@ -11,7 +11,7 @@
 ## Filters used in this script
 #3. Code Female Maturity > 1      (mature individuals)
 
-setwd("D:/Buren_files/GitHub/PG_fem_body_condition")
+#setwd("D:/Buren_files/GitHub/PG_fem_body_condition")
 #packrat::init()
 library(tibble)
 library(lubridate)
@@ -19,7 +19,7 @@ library(ggplot2)
 library(dplyr)
 
 
-femcond <- as_data_frame(read.csv('data/raw/fembodycondition.csv', header=T,as.is=T))
+femcond <- as_data_frame(read.csv('data/fembodycondition.csv', header=T,as.is=T))
 
 femcond$sex <- "F"
 
@@ -225,9 +225,9 @@ for (i in seq(min(conddens$age),max(conddens$age)-5,by=5)){
    
    
    ##print plot
-#   print(p)
-#   pdf(file='output/plots/condovertime.pdf',width=9.5,height=6.5, family = "sans", bg = "white",   pointsize = 8)
-#     print(p)
-#  dev.off()
+   print(p)
+   pdf(file='output/plots/condovertime.pdf',width=9.5,height=6.5, family = "sans", bg = "white",   pointsize = 8)
+     print(p)
+  dev.off()
 
 }
