@@ -1,6 +1,6 @@
 ## run after running female_bodycondition.R
 
-infile <- 'data/fecundity_2014-feb20.csv'
+infile <- 'data/raw/fecundity_2014-feb20.csv'
 
 
 fecun <- as_data_frame(read.csv(infile,header=T))
