@@ -12,6 +12,7 @@
 #3. Code Female Maturity > 1      (mature individuals)
 
 #setwd("D:/Buren_files/GitHub/PG_fem_body_condition")
+setwd('/media/alejandro/adb_data/Buren_files/GitHub/PG_fem_body_condition/')
 #packrat::init()
 library(tibble)
 library(lubridate)

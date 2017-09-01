@@ -1,8 +1,7 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.8.1
-RVersion: 3.3.1
-Repos: CRAN=https://cran.rstudio.com/,
-    CRANextra=http://www.stats.ox.ac.uk/pub/RWin
+RVersion: 3.4.1
+Repos: CRAN=https://cran.rstudio.com/
 
 Package: BH
 Source: CRAN
@@ -34,6 +33,17 @@ Source: CRAN
 Version: 0.1
 Hash: 0afb92b59b02593c70ff8046700ba9d3
 
+Package: bindr
+Source: CRAN
+Version: 0.1
+Hash: e3a02070cf705d3ad1c5af1635a515a3
+
+Package: bindrcpp
+Source: CRAN
+Version: 0.2
+Hash: aed3b57152b09d05864d8a2547bdc9f0
+Requires: Rcpp, bindr, plogr
+
 Package: colorspace
 Source: CRAN
 Version: 1.2-6
@@ -53,13 +63,19 @@ Package: dplyr
 Source: CRAN
 Version: 0.5.0
 Hash: 03e5e71801c0f49217922e2cd4680f06
-Requires: BH, DBI, R6, Rcpp, assertthat, lazyeval, magrittr, tibble
+Requires: BH, R6, Rcpp, assertthat, glue, magrittr, pkgconfig, plogr,
+    rlang, bindrcpp, tibble
 
 Package: ggplot2
 Source: CRAN
 Version: 2.1.0
 Hash: 50e297b0191179c39c7dcae0eff72b51
-Requires: digest, gtable, plyr, reshape2, scales
+Requires: digest, gtable, lazyeval, plyr, tibble, scales, reshape2
+
+Package: glue
+Source: CRAN
+Version: 1.1.1
+Hash: dfd5a27768175ae51d08dc6beba1ef11
 
 Package: gtable
 Source: CRAN
@@ -98,6 +114,16 @@ Source: CRAN
 Version: 0.4.8-1
 Hash: 6ad605ba7b4b476d84be6632393f5765
 
+Package: pkgconfig
+Source: CRAN
+Version: 2.0.1
+Hash: 0dda4a2654a22b36a715c2b0b6fbacac
+
+Package: plogr
+Source: CRAN
+Version: 0.1-1
+Hash: fb19215402e2d9f1c7f803dcaa806fc2
+
 Package: plyr
 Source: CRAN
 Version: 1.8.4
@@ -110,11 +136,16 @@ Version: 1.4.1
 Hash: c9a8d2349fe969cf519dd0ced9cc1414
 Requires: Rcpp, plyr, stringr
 
+Package: rlang
+Source: CRAN
+Version: 0.1.2
+Hash: c17b638e3282aa222a47112d7a60bc66
+
 Package: scales
 Source: CRAN
 Version: 0.4.0
 Hash: c4a91e7a322e03813b68b73940ce031f
-Requires: RColorBrewer, Rcpp, dichromat, labeling, munsell, plyr
+Requires: RColorBrewer, Rcpp, dichromat, labeling, plyr, munsell
 
 Package: stringi
 Source: CRAN
@@ -131,4 +162,4 @@ Package: tibble
 Source: CRAN
 Version: 1.2
 Hash: 3b35b556ef7acddb0d28fe6a27ad50e4
-Requires: Rcpp, assertthat, lazyeval
+Requires: Rcpp, rlang
